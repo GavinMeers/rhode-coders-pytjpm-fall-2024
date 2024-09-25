@@ -1,1 +1,1 @@
-# rhode-coders-pytjpm-fall-2024
+# rhode-coders-python-fall-2024
