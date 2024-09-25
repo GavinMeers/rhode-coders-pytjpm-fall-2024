@@ -1,2 +1,6 @@
-print (input("Enter your name ") + (" was walking down the road."))
-print ("When suddenly a " + input("Enter a monster ") + (" attacked them."))
+print (input("Enter a name: ") + (" was walking down the road."))
+print ("When suddenly a " + input("Enter a monster: ") + (" attacked them."))
+print ("They try to fight it off with their " + input("Enter a weapon: ") + (", but fail."))
+print ("They get scared and start " + input("Enter a verb: ") + ("."))
+print ("You are almost caught when " + input("Enter a person: ") + (" saves you while driving a ") + input("Enter a noun: ") + ("."))
+print ("They are brought home and start " + input("Enter a verb: ") + (" toward their very ") + Input(" Enter a Adjective: ") + (" home."))
