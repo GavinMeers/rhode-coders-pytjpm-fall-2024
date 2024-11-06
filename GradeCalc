@@ -1,0 +1,43 @@
+score1 = float(input("What is your 1st Test grade? "))
+score2 = float(input("What is your 2nd Test grade? "))
+score3 = float(input("What is your 3rd Test grade? ")) 
+
+scores = [score1, score2, score3] # uses the answers the user inputs and puts them in a list
+
+total_score = 0
+
+for score in scores:
+    total_score += score 
+
+average_score = total_score / len(scores) 
+
+if 96 <= average_score <= 100:  # I used these grade cutoffs because they are the same as what my school uses.
+    grade = "A+"
+elif 92 <= average_score < 96:
+    grade = "A"
+elif 90 <= average_score < 92:
+    grade = "A-"
+elif 87 <= average_score < 90:
+    grade = "B+"
+elif 83 <= average_score < 87:
+    grade = "B"
+elif 80 <= average_score < 83:
+    grade = "B-"
+elif 77 <= average_score < 80:
+    grade = "C+"
+elif 73 <= average_score < 77:
+    grade = "C"
+elif 70 <= average_score < 73:
+    grade = "C-"
+elif 67 <= average_score < 70:
+    grade = "D+"
+elif 63 <= average_score < 67:
+    grade = "D"
+elif 60 <= average_score < 63:
+    grade = "D-"
+else:
+    grade = "F" 
+
+print("Your scores are", scores)
+print("Your final score is", average_score)
+print("You recevied a", grade)
