@@ -1,0 +1,25 @@
+import random
+
+print("Welcome to the Wizard's Duel: Choose your spell!")
+
+def wizard_battle():
+    choices = ["Fireball", "Ice Spell", "Lightning Strike"]
+    userChoice = input("Choose your spell (Fireball, Ice Spell, Lightning Strike): ")
+
+    if userChoice not in choices:
+        print("Invalid choice! Please choose Fireball, Ice Spell, or Lightning Strike.")
+        return
+
+    enemyChoice = random.choice(choices)
+    print("Your Enemy chose:", enemyChoice)
+
+    if userChoice == enemyChoice:
+        print("It's a tie! Both wizards cast the same spell.")
+    elif (userChoice == "Fireball" and enemyChoice == "Ice Spell") or \
+         (userChoice == "Ice Spell" and enemyChoice == "Lightning Strike") or \
+         (userChoice == "Lightning Strike" and enemyChoice == "Fireball"):
+        print("You win the battle!")
+    else:
+        print("You lose the battle!")
+
+wizard_battle()
